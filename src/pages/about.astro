@@ -2,9 +2,12 @@
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const pageTitle = "Om meg"
+
+
+
 ---
+
 
 <html lang="en">
   <head>
@@ -12,7 +15,7 @@ import Layout from '../layouts/Layout.astro';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
-    <title>About</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
 
@@ -20,8 +23,7 @@ import Layout from '../layouts/Layout.astro';
     <a href="/about/">about</a>
     <a href="/prosjekter/">prosjekter</a>
     
-    <h1>Min nettside</h1>
-	<h1> Om meg </h1>
+	<h1> {pageTitle}</h1>
     <p> Jeg er en student på 3. året av en bachelor i kognitiv vitenskap. </p>
     <p>Jeg spesialiserer meg innen informatikk</p>
 
